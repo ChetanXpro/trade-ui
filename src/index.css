@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+    :root {
+        --filament-text-brand: #009193;
+    }
+}
+
+.bg-gradient {
+    background: linear-gradient(180deg, rgba(64, 224, 208, 0) 0%, rgba(42, 204, 187, 0.05) 100%),
+                linear-gradient(0deg, rgba(64, 224, 208, 0.2), rgba(64, 224, 208, 0.2));
+   
+  }
+  

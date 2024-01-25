@@ -1,4 +1,3 @@
-
 import { ChevronUpIcon } from "../Icons/icon";
 
 const Footer = () => {

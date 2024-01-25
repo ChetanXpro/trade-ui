@@ -1,8 +1,9 @@
 import { useState } from "react";
-import CollateralInput from "../Input";
-import LeverageSlider from "../Slider";
-import CustomCheckbox from "../CustomCheckbox";
+
+import LeverageSlider from "../Slider/index";
+import CustomCheckbox from "../CustomCheckbox/index";
 import { ChevronUp, HelpCircle } from "../Icons/icon";
+import CollateralInput from "../Input";
 
 const Sidebar = () => {
   // const [currentTab, setCurrentTab] = useState<string>("Market");

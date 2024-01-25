@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
 
+}
 
 @layer base {
     :root {
@@ -16,3 +20,48 @@
    
   }
   
+.bg{
+    background: linear-gradient(180deg, #1A262E 0%, #0c0d0f00 8.63%, #1A1B1E 12.23%),
+linear-gradient(0deg, #1B1C1E, #1B1C1E);
+
+
+}
+
+.footer-bg{
+    background: linear-gradient(0deg, #1B1C1E, #1B1C1E),
+linear-gradient(0deg, #25272A, #25272A);
+
+}
+
+.tag-bg{
+    background: linear-gradient(0deg, #2B2B2B, #2B2B2B),
+linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.04) 100%);
+
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    width: 32px; /* Set the width of the custom thumb while dragging */
+    height: 24px; /* Set the height of the custom thumb while dragging */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" viewBox="0 0 32 24" fill="none"><path d="M0.75 4C0.75 2.20508 2.20507 0.75 4 0.75H28C29.7949 0.75 31.25 2.20507 31.25 4V20C31.25 21.7949 29.7949 23.25 28 23.25H4C2.20507 23.25 0.75 21.7949 0.75 20V4Z" fill="%23023131"/><path d="M0.75 4C0.75 2.20508 2.20507 0.75 4 0.75H28C29.7949 0.75 31.25 2.20507 31.25 4V20C31.25 21.7949 29.7949 23.25 28 23.25H4C2.20507 23.25 0.75 21.7949 0.75 20V4Z" stroke="%23009193" stroke-width="1.5"/><line x1="12.75" y1="8" x2="12.75" y2="16" stroke="%230A7B75" stroke-width="1.5"/><line x1="16.75" y1="8" x2="16.75" y2="16" stroke="%230A7B75" stroke-width="1.5"/><line x1="20.75" y1="8" x2="20.75" y2="16" stroke="%230A7B75" stroke-width="1.5"/></svg>') no-repeat; /* Set the SVG as the background of the custom thumb */
+    cursor: pointer;
+    z-index: 500;
+  }
+  input[type="range"].slider {
+    height: 6px;
+    background-color: #d3d3d3;
+    border: none;
+    z-index: 500;
+    border-radius: 5px;
+    outline: none;
+    -webkit-appearance: none;
+    /* margin: 15px 0; */
+  }
+
+
+  .checkbox_input_bg{
+    background: linear-gradient(0deg, #25272A, #25272A),
+linear-gradient(0deg, #363A41, #363A41);
+
+  }

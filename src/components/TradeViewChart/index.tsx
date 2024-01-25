@@ -30,6 +30,14 @@ function TradingViewWidget() {
         }`;
     container.current.appendChild(script);
 
+    const toolbar = document.getElementsByClassName("content-Z4M3tWHb") as any;
+
+    if (toolbar) {
+      console.log("Toolbar found----", toolbar);
+      // Change the background color
+      //   toolbar.style.backgroundColor = "#059669";
+    }
+
     return () => {
       container.current.removeChild(script);
     };

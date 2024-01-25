@@ -1,18 +1,19 @@
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar.tsx";
+// import Navbar from "./Components/Navbar/Navbar.tsx";
 
-import Footer from "./Components/Footer/Footer.tsx";
+// import Footer from "./Components/Footer/Footer.tsx";
 import PerpStats from "./Components/PerpStats/index.tsx";
 import Sidebar from "./Components/Sidebar/index.tsx";
 import Orderbook from "./Components/OrderBook/index.tsx";
 import TradeViewChart from "./Components/TradeViewChart/index.tsx";
+import Layout from "./Components/Layout/index.tsx";
+// import TradeView from "./Components/TradeView/index.tsx";
 
 function App() {
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
+    <Layout>
       <div className="flex-1 ">
-        <div className="   w-full    ">
+        <div className="   bg-red-400 h-full    ">
           <PerpStats />
           <div className="flex   justify-between w-full    ">
             <div className="flex bg-filament-card-bg flex-col w-full ">
@@ -53,8 +54,7 @@ function App() {
           </div>
         </div>
       </div>
-      <Footer />
-    </div>
+    </Layout>
   );
 }
 

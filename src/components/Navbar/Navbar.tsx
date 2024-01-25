@@ -54,7 +54,7 @@ const Navbar = () => {
             Earn 62% APR on USDT
           </button>
         </div>
-        <p className="bg-red-400 h-[90%] border border-gray-600"></p>
+        <p className=" h-[90%] border w-[0.5px] border-gray-600"></p>
         <div className=" flex gap-2 ">
           <button className="bg-[#40E0D0] py-[7px] rounded-md text-white px-6 ">
             Connect Wallet

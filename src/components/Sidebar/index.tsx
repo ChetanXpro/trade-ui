@@ -31,7 +31,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col h-full gap-4 ">
       <div className="flex items-center border border-[#25272A]  px-4 h-10 justify-between">
         <div className=" h-full flex border border-x-0 border-t-0  border-b-[#FFFFFF] items-center justify-center flex-1">
           <p className="text-[#FFFFFF] text-sm font-semibold">Market</p>
@@ -40,7 +40,7 @@ const Sidebar = () => {
           <p className="text-[#BABABA] text-sm font-semibold">Limit</p>
         </div>
       </div>
-      <div className="px-5 flex flex-col gap-3">
+      <div className="px-5 flex h-full flex-col gap-3 lg:gap-4 ">
         <div className="">
           <CollateralInput
             inputType="number"
@@ -50,7 +50,7 @@ const Sidebar = () => {
             value={collateral}
           />
         </div>
-        <div className="flex  justify-between  items-center">
+        <div className="flex h-full  justify-between  items-center">
           <div className="flex gap-2 items-center">
             <p className="text-filament-text-secondary text-xs font-normal">
               Available Collateral :
@@ -61,7 +61,7 @@ const Sidebar = () => {
             Max
           </div>
         </div>
-        <div className=" flex flex-col gap-2">
+        <div className=" flex h-full flex-col gap-2">
           <CollateralInput
             inputType="number"
             onChange={handleLeverageChange}
@@ -70,7 +70,7 @@ const Sidebar = () => {
             value={leverage}
           />
           <LeverageSlider setLeverage={setLeverage} leverage={leverage} />
-          <div className="flex mt-3 justify-between  items-center">
+          <div className="flex mt-1 h-full justify-between  items-center">
             <div className="flex gap-2 items-center">
               <p className="text-filament-text-secondary text-xs font-normal">
                 Position Size
@@ -79,9 +79,9 @@ const Sidebar = () => {
             <p className="text-white text-xs font-normal">0.024 BTC</p>
           </div>
         </div>
-        <p className="border-[0.5px] mt-2 border-[#25272A] text-[#25272A]"></p>
+        <p className="border-[0.5px]  mt-1 border-[#25272A] text-[#25272A]"></p>
 
-        <div className="flex flex-col gap-2 mt-1">
+        <div className="flex flex-col h-full gap-2 mt-1">
           <CustomCheckbox
             label="Take Profit"
             isChecked={isTakeProfitChecked}
@@ -98,9 +98,9 @@ const Sidebar = () => {
             handleCheckboxChange={handleReduceOnlyChange}
           />
         </div>
-        <p className="border-[0.5px] mt-2 border-[#25272A] text-[#25272A]"></p>
+        <p className="border-[0.5px] mt-1 border-[#25272A] text-[#25272A]"></p>
 
-        <div className=" flex flex-col gap-1">
+        <div className=" flex flex-col h-full gap-1">
           <div className="flex justify-between items-center mb-1">
             <p className="text-white font-semibold text-xs">Summary</p>
             <ChevronUp />
@@ -146,7 +146,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="flex gap-2 items-center border border-[#25272A]  px-4 py-2 justify-between">
+      <div className="flex gap-2 items-center h-full border border-[#25272A]  px-4 py-2 justify-between">
         <button className="bg-[#059669] py-2 w-full rounded-[5px] text-white text-sm font-semibold">
           Buy / Long
         </button>

@@ -3,7 +3,7 @@ import { ArrowDropDownIcon, BitcoinIcon, SettingIcon } from "../Icons/icon";
 
 const PerpStats = () => {
   return (
-    <div className="h-16 flex  items-center border-l-0 justify-between  border-y-[#FFFFFF0D] bg ">
+    <div className="h-14 flex  items-center border-l-0 justify-between  border-y-[#FFFFFF0D] bg ">
       <div className="flex items-center h-full">
         <div className="flex gap-5 h-full px-4  border border-[#FFFFFF0D] items-center">
           <div className="flex gap-3 items-center">

@@ -1,7 +1,7 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
-import Footer from "./components/Footer";
+import Footer from "./components/Footer/Footer";
 import PerpStats from "./components/PerpStats";
 import Sidebar from "./components/Sidebar";
 import Orderbook from "./components/OrderBook";

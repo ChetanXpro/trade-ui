@@ -43,7 +43,7 @@ const Orderbook = () => {
         </div>
       </div>
 
-      <div className=" flex flex-col overflow-y-scroll gap-1">
+      <div className=" flex flex-col  gap-1">
         <div className="flex px-2 justify-between">
           <p className="text-[11px] flex gap-1 font-medium text-filament-text-secondary">
             Price
@@ -87,7 +87,7 @@ const Orderbook = () => {
             43,998.5
           </p>
         </div>
-        <div className="flex  flex-col gap-1">
+        <div className="flex   flex-col gap-1">
           {asks.map((bid, index) => {
             return (
               <div

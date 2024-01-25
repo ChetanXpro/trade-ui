@@ -1,11 +1,11 @@
 import "./App.css";
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar.tsx";
 
-import Footer from "./Components/Footer/Footer";
-import PerpStats from "./Components/PerpStats";
-import Sidebar from "./Components/Sidebar";
-import Orderbook from "./Components/OrderBook";
-import TradeViewChart from "./Components/TradeViewChart";
+import Footer from "./Components/Footer/Footer.tsx";
+import PerpStats from "./Components/PerpStats/index.tsx";
+import Sidebar from "./Components/Sidebar/index.tsx";
+import Orderbook from "./Components/OrderBook/index.tsx";
+import TradeViewChart from "./Components/TradeViewChart/index.tsx";
 
 function App() {
   return (

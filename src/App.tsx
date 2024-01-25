@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import PerpStats from "./components/PerpStats";
 import Sidebar from "./components/Sidebar";
 import Orderbook from "./components/OrderBook";
+import TradeViewChart from "./components/TradeViewChart";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,15 +23,7 @@ function App() {
             <div className="flex bg-filament-card-bg flex-col w-full ">
               <div className="flex-grow flex ">
                 <div className="w-full flex h-full">
-                  <div className="w-[4rem] h-full  bg-filament-card-bg border border-[#FFFFFF0D]  border-b-0">
-                    d
-                  </div>
-                  <div className="w-full">
-                    <div className="h-12 border border-[#FFFFFF0D] w-full">
-                      dd
-                    </div>
-                    <div>Trade Chart</div>
-                  </div>
+                  <TradeViewChart />
                 </div>
                 <div className="border border-[#FFFFFF0D] w-[25rem] h-full">
                   <Orderbook />

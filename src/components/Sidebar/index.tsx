@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import CollateralInput from "../Input";
 import LeverageSlider from "../Slider";
 import CustomCheckbox from "../CustomCheckbox";
 import { ChevronUp, HelpCircle } from "../Icons/icon";
 
 const Sidebar = () => {
-  const [currentTab, setCurrentTab] = useState<string>("Market");
+  // const [currentTab, setCurrentTab] = useState<string>("Market");
   const [collateral, setCollateral] = useState<number>(0);
   const [isTakeProfitChecked, setIsTakeProfitChecked] = useState(false);
 

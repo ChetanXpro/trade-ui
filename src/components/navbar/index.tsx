@@ -1,4 +1,3 @@
-import React from "react";
 import {
   ArrowDropDownIcon,
   Logo,
@@ -34,12 +33,12 @@ const Navbar = () => {
           </div>
           <p className="text-gray-800">|</p>
           <div className="flex gap-5 ml-2">
-            <a href="" className="text-[#ffffffcc] text-xs font-medium">
+            <a href="" className="text-[#ffffffcc] text-sm font-medium">
               Portfolio
             </a>
             <a
               href=""
-              className="text-[#ffffffcc] flex  items-center gap-1 text-xs font-medium"
+              className="text-[#ffffffcc] flex  items-center gap-1 text-sm font-medium"
             >
               More
               <ArrowDropDownIcon />

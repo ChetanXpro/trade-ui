@@ -1,5 +1,3 @@
-import React from "react";
-
 const Orderbook = () => {
   const bids = [
     { price: 12436.54, quantity: 0.024, total: 1056.028, percentage: "95" },
@@ -36,7 +34,7 @@ const Orderbook = () => {
 
   return (
     <div className="flex flex-col h-full gap-4 ">
-      <div className="flex items-center border border-[#25272A]  px-4 h-10 justify-between">
+      <div className="flex overflow-y-scroll items-center border border-[#25272A]  px-4 h-10 justify-between">
         <div className=" h-full flex border border-x-0 border-t-0  border-b-[#FFFFFF] items-center justify-center flex-1">
           <p className="text-[#FFFFFF] text-sm font-semibold">Order Book</p>
         </div>
@@ -45,7 +43,7 @@ const Orderbook = () => {
         </div>
       </div>
 
-      <div className=" flex flex-col gap-1">
+      <div className=" flex flex-col overflow-y-scroll gap-1">
         <div className="flex px-2 justify-between">
           <p className="text-[11px] flex gap-1 font-medium text-filament-text-secondary">
             Price
@@ -63,7 +61,7 @@ const Orderbook = () => {
             Total
           </p>
         </div>
-        <div className="flex  flex-col gap-1">
+        <div className="flex   flex-col overflow-y-scroll gap-1">
           {bids.map((bid, index) => {
             return (
               <div

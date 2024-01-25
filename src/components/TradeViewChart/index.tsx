@@ -1,5 +1,5 @@
 // TradingViewWidget.jsx
-import React, { useEffect, useRef, memo } from "react";
+import { useEffect, useRef, memo } from "react";
 
 function TradingViewWidget() {
   const container = useRef() as any;
@@ -17,10 +17,14 @@ function TradingViewWidget() {
           "interval": "60",
           "timezone": "Etc/UTC",
           "theme": "dark",
-          "style": "0",
+          "style": "1",
+          
+          "backgroundColor": "#1B1C1E",
           "locale": "en",
           "enable_publishing": false,
           "hide_side_toolbar": false,
+          "toolbar_bg": "#1B1C1E",
+          "hide_volume": true,
           "allow_symbol_change": true,
           "support_host": "https://www.tradingview.com"
         }`;
@@ -33,7 +37,7 @@ function TradingViewWidget() {
 
   return (
     <div
-      className="tradingview-widget-container"
+      className="tradingview-widget-container bg-filament-card-bg"
       ref={container}
       style={{ height: "100%", width: "100%" }}
     >

@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowDropDownIcon, BitcoinIcon, SettingIcon } from "../Icons/icon";
 
 const PerpStats = () => {

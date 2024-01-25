@@ -1,4 +1,4 @@
-import React from "react";
+
 import { ChevronUpIcon } from "../Icons/icon";
 
 const Footer = () => {

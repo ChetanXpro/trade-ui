@@ -1,5 +1,3 @@
-import React from "react";
-
 interface CollateralInputProps {
   type: string;
   onChange: any;
